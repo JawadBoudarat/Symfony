@@ -11,10 +11,12 @@ class ApplicationController extends AbstractController
     /**
      * @Route("/application", name="application")
      */
-    public function index()
+    public function index() : Response
     {
         return $this->render('application/index.html.twig', [
             'controller_name' => 'Hola Jawad',
+            'other_controller' => 'Hey you!',
         ]);
     }
+
 }

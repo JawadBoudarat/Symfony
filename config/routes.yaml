@@ -1,11 +1,5 @@
-application:
-    path: /
-    controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::TemplateAction
-    defaults:
-      template: 'application.php'
-
 addingApp:
     path: /application
-    controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController::TemplateAction
+    controller: \Controller\ApplicationController::index
     defaults:
       template: '/application/index.html.twig'
